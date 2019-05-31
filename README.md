@@ -18,7 +18,7 @@ Environment folder structure:
     │   │   └── database.go
 
 
-each **database.go** has it's onw implementation of the function `GetSource()`.
+each **database.go** has it's own implementation of the function `GetSource()`.
 
 **config.go**  defines a list of databaseSources, that uses the environment name as map key, and call it's onw `GetSource` function.
 
