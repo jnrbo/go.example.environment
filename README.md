@@ -29,3 +29,4 @@ each **database.go** has it's onw implementation of the function `GetSource()`.
 
 To make it work, you need to create a localhost postgres database named `database_test` with user `juniorbarros` and **without password**.
 
+You also need a table with the name `customers` and the attributes: `id, name, email`

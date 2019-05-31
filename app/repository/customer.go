@@ -1,13 +1,12 @@
 package repository
 
 import (
-	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
 
 type Customer struct {
-	gorm.Model
+	ID uint `gorm:"primary_key"`
 	Name string
 	Email string
 }
