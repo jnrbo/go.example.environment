@@ -7,10 +7,6 @@ import (
 	"os"
 )
 
-var databaseSources = map[string]func() string {
-	"production": production.GetSource,
-	"development": development.GetSource,
-}
 
 func Environment() string {
 	env, found := os.LookupEnv("ENVIRONMENT")
@@ -22,10 +18,17 @@ func Environment() string {
 	}
 }
 
-func GetSource() string {
-	 return databaseSources[Environment()]()
-}
-
 func IsProduction() bool {
 	return Environment() == "production"
+}
+
+// Database Sources is a map that uses the enviroment as key
+
+var databaseSources = map[string]func() string {
+	"production": production.GetSource,
+	"development": development.GetSource,
+}
+
+func GetSource() string {
+	 return databaseSources[Environment()]()
 }

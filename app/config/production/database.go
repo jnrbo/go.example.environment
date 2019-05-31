@@ -1,6 +1,6 @@
 package production
 
-const host  = "localhost"
+const host = "localhost"
 const dbname = "database_test"
 const user = "juniorbarros"
 const password = "pass"
