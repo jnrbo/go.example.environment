@@ -1,9 +1,9 @@
 package config
 
 import (
-	"environment.go.example/app/config/development"
-	"environment.go.example/app/config/production"
 	"fmt"
+	"go.example.environment/app/config/development"
+	"go.example.environment/app/config/production"
 	"os"
 )
 

@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"environment.go.example/app/config"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
+	"go.example.environment/app/config"
 	"sync"
 )
 

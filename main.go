@@ -1,8 +1,8 @@
 package main
 
 import (
-	"environment.go.example/app/repository"
 	"fmt"
+	"go.example.environment/app/repository"
 )
 
 func main() {
