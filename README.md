@@ -9,12 +9,13 @@ This is an approach of how to implement two environments using go, in a simple w
 
 Environment folder structure:
 
-├── config
-│   └── config.go
-│   └──  development
-│   │   └── database.go
-│   └── production
-│   │   └── database.go
+
+    ├── config
+    │   └── config.go
+    │   └──  development
+    │   │   └── database.go
+    │   └── production
+    │   │   └── database.go
 
 
 each **database.go** has it's onw implementation of the function `GetSource()`.
