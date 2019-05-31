@@ -12,7 +12,7 @@ Environment folder structure:
 
     ├── config
     │   └── config.go
-    │   └──  development
+    │   └── development
     │   │   └── database.go
     │   └── production
     │   │   └── database.go
